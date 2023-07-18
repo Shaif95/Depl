@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.xgboost-img {
+  width: 75%;
+  height: 75%;
+}
+
+.xgboost-graph {
+  width: 95%;
+  height: 90%;
+}
+
+.snp-graph {
+  width:60%;
+  height:60%;
+}
+
+
+.decTreeGraph{
+  width: 95%;
+  height: 90%;
+}
+
+.decTreeConfusion{
+  width: 75%;
+  height: 75%;
+}

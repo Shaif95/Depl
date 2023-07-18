@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Witty Wombats</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+  
+<body>
+  <h1>Witty Wombats</h1>
+
+  <script src="script.js"></script>
+  
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+
+  <!-- Ryan -->
+ <!-- Write a description about your favourite ML Algorithm, add an image, a title, a description and a button with a link to sklearn doc-->
+  <div class="xgb-intro">
+    <h2>XGBoost</h2>
+    <p>XGBoost is short for eXtreme Gradient Boosting. It takes multiple weak learners and uses them together to create one larger model. It can be used for classification and regression and allows for great optimiazation and enhancements over normal decision trees. It utilizes multiple decision trees (weak learners) to learn from past errors and gets better with each iteration via weighting values based on if it's an error or not and feeding that data to the next tree.</p>
+    <img src="https://miro.medium.com/v2/resize:fit:1000/0*zdmqFZ2nooBRedqC.png" class="xgboost-img">
+  </div>
+  <div class="xgb-example">
+    <p>Below is a graph of trading markers for Apple stock. Trading markers put down if there is ever a certain percent of change on a given day in this example the percentage given was 20%. This data is used for building a trading strategy. I used XGBoost for classification of trading markers and below the graph you can see the confusion matrix which displays the amount of error from the algorithm.</p>
+    <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Ryan/aapl.png" class="xgboost-graph">
+    <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Ryan/XGB.png" class="xgboost-img">
+    <p>As you can see here in this simple classification problem XGBoost was able to get 100% accuracy displaying its strength.</p>
+  
+    <a class="btn btn-primary" href="https://www.nvidia.com/en-us/glossary/data-science/xgboost/" role="button">More info</a>
+    <a class="btn btn-primary" href="https://xgboost.readthedocs.io/en/stable/" role="button">Docs</a>
+  </div>
+  <!-- Elhanan -->
+<!-- Write a description about your favourite ML Algorithm, add an image, a title, a description and a button with a link to sklearn-->
+  <h2 style="margin: 40px">XGB #2</h2>
+  <p style="margin:20px;">XGB is one of the most popular and widely used machine learning algorithms due to its ability to handle large datasets and its ability to achieve state-of-the-art performance in many machine learning tasks such as classification and regression. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. This algorithm goes by lots of different names such as gradient boosting, multiple additive regression trees, stochastic gradient boosting or gradient boosting machines.</p>
+    <img src="https://miro.medium.com/max/1280/1*PZd-TOxSLV_--3glkFHwxQ.png" alt="Diagram showing the basics of XGBoost" class=xgboost-img>
+  <p style="margin:20px;">XGB combines many weak prediction models, usually decision trees, to create a more accurate predictor. It uses the gradient descent method to minimize the prediction error of each new model based on the previous ones. It combines several weak learners into strong learners.</p>
+
+  <h3 style="margin: 40px">XGBoost Results on SNP Stock Data</h3>
+  <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Elhanan/SNP.png?raw=true" alt="Graph of SNP stock data and trading markers" class=snp-graph>
+  <p style="margin:20px;">Trading markers were computed for historical SNP stock data and plotted on a graph. Trading markers indicate on which days the stock price changed by a certain amount. The threshold set for marking a day as a trading marker on the graph was set to 0.2, meaning a 20% change from previous day.</p>
+  <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Elhanan/XG_Boost.png?raw=true" alt="Results of XGBoost trained and evaluated on SNP stock data">
+  <p style="margin:20px;">A XGBoost Classifier model was trained on the trading markers of SNP historical stock data, resulting in high accuracy (99.60%) when predicting a test dataset.</p>
+  
+  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html" class="btn btn-primary" role="button">Gradient Boosting on SKLearn</a>
+  
+
+
+
+  <!-- Sameer -->
+<!-- Write a description about your favourite ML Algorithm, add an image, a title, a description and a button with a link to sklearn-->
+ <h2>LSTM</h2>
+ <p> LSTMs, short for Long Short-Term Memory, are a type of recurrent neural network (RNN) architecture that is designed to overcome the limitations of traditional RNNs in capturing long-term dependencies in sequential data. LSTMs were introduced by Hochreiter and Schmidhuber in 1997.</p>
+
+
+  <!-- Patrick -->
+<!-- Write a description about your favourite ML Algorithm, add an image, a title, a description and a button with a link to sklearn-->
+  <h2>Decision Tree</h2>
+  <p>Easy to understand and interpret, decision trees are structured just like what they're named after - a tree. These structures house internal nodes that represent an attribute, and each branch off of those represents a decision based on that attribute. The branches then lead to independent leaf nodes which represent a class label or numerical value. The only downside is that it is still subject to overfitting if not properly controlled, leading to poor generalization on unseen data.</p>
+  <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm.png" alt="Decision tree visualization">
+  <p>Below is a plot of Google's stock, with the "X" representing trade markers; trade markers mark the days when there was a 20% change from the day before. A decision tree was used for the classification of these trading markers. The accuracy data of the model is shown below the graph.</p>
+  <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Patrick/Goog.png" alt = "Plot of trading marker on Google stock using decision tree" class = decTreeGraph>
+  <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Patrick/DecTree.png" alt = "Confusion matrix of a decision tree" class = decTreeConfusion>
+  <p>From the confusion matrix above, you can see there are zero false positives and negatives, so the decision tree was fully accurate here</p>
+  <a href="https://scikit-learn.org/stable/modules/tree.html#decision-trees" class="btn btn-primary" role="button">Decision trees on SKLearn</a>
+
+
+
+
+  <!-- Adam -->
+<!-- Write a description about your favourite ML Algorithm, add an image, a title, a description and a button with a link to sklearn-->
+  <h2>SVR</h2>
+  <p>SVR (Support Vector Regression) models combine the basics of linear regression with SVM by finding a hyperplane that fits the data points in continuous space. This allows SVRs to predict continuous outputs. SVRs are also able to make predictions from non-linear data by using kernels.</p>
+  <img src = "https://cdn.educba.com/academy/wp-content/uploads/2020/01/SVR-chart.png" alt = "SVR hyperplane and boundary lines around data">
+
+
+  <p>Below is a graph showing the opening price for Walmart stock followed by a graph showing the SVR model's predictions of open prices compared to the actual opening prices for Walmart stock</p>
+  <img src = "https://github.com/Shaif95/AICamp_DS/blob/main/Plots/WMT/download.png?raw=true" alt = "Opening stock prices for Walmart stock">
+  <img src = "https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Adam/download.png?raw=true" alt = "SVR Linear Regression predictions vs. Actual values">
+  <p>Here we can see the results of running SVR on a testing set of data. As you can see in the plot, many of the model's predictions are close to the actual values from the testing data and there is a low MSE (mean squared error) which shows high accuracy.</p>
+  
+  <a href = "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html" class = "btn btn-primary" role = "button">SVRs on SKLearn
+
+
+  
+</body>
+
+</html>

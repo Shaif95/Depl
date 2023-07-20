@@ -11036,12 +11036,44 @@ p {
   margin-top: 7px;
   margin-bottom: 7px;
 }
-.decTreeGraph{
-  width:95%;
-  height:90%;
+
+.skim {
+  max-width:50%;
 }
 
-.decTreeConfusion{
-  width: 50%;
-  height: 50%;
+.slim {
+  max-width:40%
 }
+
+.float_left {
+  float:left;
+}
+
+.float_right {
+  float:right;
+}
+
+.row {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.shared-horizontal {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.trading-mark-graph{
+  width:70%;
+  height:70%;
+}
+
+.confusion-matrix{
+  width: 35%;
+  height: 35%;
+}
+
